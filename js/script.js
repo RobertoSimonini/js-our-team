@@ -13,38 +13,49 @@
 
 */
 
+// Prendo l'elemento dal DOM
+const target = document.getElementById('target');
+
 const teamMembers = [
     {
-        Name: 'Wayne Barnett',
+        name: 'Wayne Barnett',
         role: 'Founder & CEO',
         picture : 'immagine',
     },
     {
-        Name: 'Angela Caroll',
+        name: 'Angela Caroll',
         role: 'Chief Editor',
         picture : 'immagine',
     },
     {
-        Name: 'Walter Gordon',
+        name: 'Walter Gordon',
         role: 'Office manager',
         picture : 'immagine',
     },
     {
-        Name: 'Angela Lopez',
+        name: 'Angela Lopez',
         role: 'Social Media Manager',
         picture : 'immagine',
     },
     {
-        Name: 'Scott Estrada',
+        name: 'Scott Estrada',
         role: 'Developer',
         picture : 'immagine',
     },
     {
-        Name: 'Barbara Ramos',
+        name: 'Barbara Ramos',
         role: 'Graphic designer',
         picture : 'immagine',
     }
 ];
 
-console.log(teamMembers);
+
+for (let i = 0; i < teamMembers.length; i++) {
+    const teamMember = teamMembers[i];
+
+    console.log(teamMember.name);
+
+}
+
+// target.innerText = teamMembers;
 
