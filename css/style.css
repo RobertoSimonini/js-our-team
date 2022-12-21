@@ -3,3 +3,13 @@
 body {
     padding-top: 50px;
 }
+
+.my-card {
+    cursor: pointer;
+    filter: grayscale(1.5);
+    transition: filter 0.5s;
+}
+
+.my-card:hover {
+    filter: grayscale(0);
+}

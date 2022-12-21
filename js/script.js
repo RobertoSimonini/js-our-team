@@ -11,6 +11,12 @@
     #MILESTONE 3:
     Stampare le stesse informazioni su DOM sottoforma di stringhe
 
+    ?BONUS 1:
+    Trasformare la stringa foto in una immagine effettiva
+    ?BONUS 2:
+    Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potete usare lo screen in allegato come spunto
+
+
 */
 
 // Prendo l'elemento dal DOM
@@ -54,7 +60,7 @@ const teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
     let teamMember = teamMembers[i];
     // Loggo le proprietà in pagina ma senza style
-    const teamMemberElement = `<div class=" col-4 g-5 text-center">
+    const teamMemberElement = `<div class=" col-4 g-5 text-center my-card">
     <img src="img/${i}.jpg" alt="">
     <h3 class="pt-3 text-success">${teamMember.name}</h3>
     <p class="fw-bold">${teamMember.role}</p>`
