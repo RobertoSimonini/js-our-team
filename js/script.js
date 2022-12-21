@@ -51,10 +51,12 @@ const teamMembers = [
 
 
 for (let i = 0; i < teamMembers.length; i++) {
-    const teamMember = teamMembers[i];
-
+    let teamMember = teamMembers[i];
     // Loggo le proprietà in pagina ma senza style
-    target.innerText += teamMember.name + '  ' + teamMember.role + '  ' + teamMember.picture + '\n';
+    const teamMemberElement = document.createElement('div');
+    teamMemberElement.innerText = `${teamMember.name}  ${teamMember.role} ${teamMember.name}`;
+    target.appendChild(teamMemberElement);
+    
 }
 
 
