@@ -15,6 +15,7 @@
 
 // Prendo l'elemento dal DOM
 const target = document.getElementById('target');
+target.classList.add('row');
 
 const teamMembers = [
     {
@@ -53,10 +54,12 @@ const teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
     let teamMember = teamMembers[i];
     // Loggo le proprietà in pagina ma senza style
-    const teamMemberElement = document.createElement('div');
-    teamMemberElement.innerText = `${teamMember.name}  ${teamMember.role} ${teamMember.picture}`;
-    target.appendChild(teamMemberElement);
-    
+    const teamMemberElement = 
+    `<div class="card col-4 g-4 text-center">
+        ${teamMember.name}  ${teamMember.role} ${teamMember.picture}
+    </div>`
+ 
+    target.innerHTML +=  teamMemberElement;
 }
 
 
