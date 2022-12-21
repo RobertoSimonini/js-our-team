@@ -54,12 +54,10 @@ const teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
     let teamMember = teamMembers[i];
     // Loggo le proprietà in pagina ma senza style
-    const teamMemberElement = 
-    `<div class="card col-4 g-4 text-center">
-        ${teamMember.name}  ${teamMember.role} ${teamMember.picture}
-    </div>`
- 
-    target.innerHTML +=  teamMemberElement;
+    const teamMemberElement = `<div class=" col-4 g-5 text-center">
+    <img src="img/${i}.jpg" alt="">
+    <p>${teamMember.name}</p>
+    <p>${teamMember.role}</p>`
+    target.innerHTML += teamMemberElement;
+
 }
-
-
