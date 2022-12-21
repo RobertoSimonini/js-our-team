@@ -53,12 +53,8 @@ const teamMembers = [
 for (let i = 0; i < teamMembers.length; i++) {
     const teamMember = teamMembers[i];
 
-    // Loggo le proprietà dei membri in console 
-    console.log(teamMember.name);
-    console.log(teamMember.role);
-    console.log(teamMember.picture);
-    
-
+    // Loggo le proprietà in pagina ma senza style
+    target.innerText += teamMember.name + '  ' + teamMember.role + '  ' + teamMember.picture + '\n';
 }
 
 
