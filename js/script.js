@@ -56,8 +56,8 @@ for (let i = 0; i < teamMembers.length; i++) {
     // Loggo le proprietà in pagina ma senza style
     const teamMemberElement = `<div class=" col-4 g-5 text-center">
     <img src="img/${i}.jpg" alt="">
-    <p>${teamMember.name}</p>
-    <p>${teamMember.role}</p>`
+    <h3 class="pt-3 text-success">${teamMember.name}</h3>
+    <p class="fw-bold">${teamMember.role}</p>`
     target.innerHTML += teamMemberElement;
 
 }
